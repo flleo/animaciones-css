@@ -1,0 +1,167 @@
+body {
+  background-image: url("../images/plumas.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-inline: 20px;
+  color: #ece3e3;
+}
+
+header {
+  background-color: #81e6f8;
+  color: #8f158f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 25px;
+  width: 1200px;
+}
+
+header:hover {
+  background-color: #8f158f;
+  color: #e9b9e9;
+  border-radius: 45px;
+}
+
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  background-image: url("../images/cuadritos.jpg");
+  width: 1200px;
+  margin: 20px 0;
+}
+
+article div {
+  margin: 10px;
+}
+
+article div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+article div:first-child svg:hover {
+  border-radius: 4px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+article div:first-child svg:hover path {
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes example {
+  0% {
+    fill: blue;
+  }
+  25% {
+    fill: violet;
+  }
+  50% {
+    fill: red;
+  }
+  75% {
+    fill: green;
+  }
+  100% {
+    fill: yellowgreen;
+  }
+}
+
+@keyframes example {
+  0% {
+    fill: blue;
+  }
+  25% {
+    fill: violet;
+  }
+  50% {
+    fill: red;
+  }
+  75% {
+    fill: green;
+  }
+  100% {
+    fill: yellowgreen;
+  }
+}
+
+article > div:nth-child(2) {
+  margin: 0 auto;
+}
+
+article > div:nth-child(2) video {
+  height: 200px;
+}
+
+article > div:nth-child(2) :hover {
+  height: 240px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+article div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+[class^="item"] {
+  height: 150px;
+  width: 150px;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 1rem;
+  border: 2px solid black;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+span {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: whitesmoke;
+  text-align: center;
+  font-size: 2rem;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.item1 {
+  background-image: url(../images/garbanzas.jpg);
+}
+
+.item2 {
+  background-image: url(../images/costillas.jpg);
+}
+
+.item3 {
+  background-image: url(../images/escaldon.jpg);
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,106 @@
+body {
+  background-image: url("../images/plumas.jpg");
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-inline: 20px;
+  color: rgb(236, 227, 227);
+}
+
+header {
+  background-color: rgb(129, 230, 248);
+  color: rgb(143, 21, 143);
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+  width: 1200px;
+}
+
+header:hover {
+  background-color: rgb(143, 21, 143);
+  color: rgb(233, 185, 233);
+  border-radius: 45px;
+}
+
+article {
+  display: flex;
+  flex-direction: column-reverse;
+  background-image: url("../images/cuadritos.jpg");
+  width: 1200px;
+  margin: 20px 0;
+
+  div {
+    margin: 10px;
+  }
+  div:first-child {
+    display: flex;
+    justify-content: space-around;
+    svg:hover {
+      border-radius: 4px;;
+      -webkit-transition: all 1s ease;
+      transition: all 1s ease;
+      path {
+        animation-name: example;
+        animation-duration: 1s;   
+        @keyframes example {
+          0% {fill:blue;}
+          25%{fill:violet;}
+          50%{fill:red};
+          75%{fill:green};
+          100%{fill:yellowgreen};
+        }  
+      }
+
+    }
+  }
+  > div:nth-child(2) {
+    margin: 0 auto;
+    video {
+      height: 200px;
+    }
+    :hover {
+      height: 240px;
+      -webkit-transition: all 1s ease;
+      transition: all 1s ease;
+    }
+  }
+  div:last-child {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+[class^="item"] {
+  height: 150px;
+  width: 150px;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 1rem;
+  border: 2px solid black;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+span {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: whitesmoke;
+  text-align: center;
+  font-size: 2rem;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.item1 {
+  background-image: url(../images/garbanzas.jpg);
+}
+
+.item2 {
+  background-image: url(../images/costillas.jpg);
+}
+
+.item3 {
+  background-image: url(../images/escaldon.jpg);
+}
